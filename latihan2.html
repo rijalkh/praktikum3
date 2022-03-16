@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan2 | Kalkulator</title>
+    <link rel="stylesheet" href="../latihan2.css" />
+  </head>
+  <body>
+    <div class="kalkulator">
+      <h2>Kalkulator</h2>
+      <div class="input">
+        <div class="bil1">
+          <label>Bil 1</label>
+          <input type="text" id="bil1" />
+        </div>
+
+        <div class="bil2">
+          <label>Bil 2</label>
+          <input type="text" id="bil2" />
+        </div>
+
+        <div class="hasil">
+          <label>Hasil</label>
+          <input type="text" id="hasil" />
+        </div>
+      </div>
+
+      <div class="tombol">
+        <button id="tambah" onclick="tambah()">+</button>
+        <button id="kurang" onclick="kurang()">-</button>
+        <button id="perkalian" onclick="kali()">x</button>
+        <button id="pembagian" onclick="bagi()">/</button>
+      </div>
+    </div>
+
+    <script>
+      function tambah() {
+        var bil1 = parseInt(document.getElementById("bil1").value);
+        var bil2 = parseInt(document.getElementById("bil2").value);
+        var hasil = bil1 + bil2;
+        document.getElementById("hasil").value = hasil;
+      }
+
+      function kurang() {
+        var bil1 = parseInt(document.getElementById("bil1").value);
+        var bil2 = parseInt(document.getElementById("bil2").value);
+        var hasil = bil1 - bil2;
+        document.getElementById("hasil").value = hasil;
+      }
+
+      function kali() {
+        var bil1 = parseInt(document.getElementById("bil1").value);
+        var bil2 = parseInt(document.getElementById("bil2").value);
+        var hasil = bil1 * bil2;
+        document.getElementById("hasil").value = hasil;
+      }
+
+      function bagi() {
+        var bil1 = parseInt(document.getElementById("bil1").value);
+        var bil2 = parseInt(document.getElementById("bil2").value);
+        var hasil = bil1 / bil2;
+        document.getElementById("hasil").value = hasil;
+      }
+    </script>
+  </body>
+</html>
