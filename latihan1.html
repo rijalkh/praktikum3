@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan1 | Konversi Nilai</title>
+    <link rel="stylesheet" href="../latihan1.css" />
+  </head>
+
+  <body>
+    <div>
+      <p>Klik tombol dibawah ini untuk mengonversi</p>
+      <button onclick="konversi()">Mulai Konversi</button>
+    </div>
+
+    <script>
+      function konversi() {
+        let angka = prompt("Masukkan Angka ?");
+
+        if (angka >= 0 && angka <= 40) {
+          alert("Hasilnya E");
+        } else if (angka >= 41 && angka <= 55) {
+          alert("Hasilnya D");
+        } else if (angka >= 56 && angka <= 60) {
+          alert("Hasilnya C");
+        } else if (angka >= 61 && angka <= 65) {
+          alert("Hasilnya BC");
+        } else if (angka >= 66 && angka <= 70) {
+          alert("Hasilnya B");
+        } else if (angka >= 71 && angka <= 80) {
+          alert("Hasilnya AB");
+        } else if (angka >= 81 && angka <= 100) {
+          alert("Hasilnya A");
+        } else {
+          alert("Maaf, silahkan masukkan ulang. Angka max adalah 100");
+        }
+      }
+    </script>
+  </body>
+</html>
